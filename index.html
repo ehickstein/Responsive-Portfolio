@@ -2,53 +2,37 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <title> Eric's Basic Portfolio - About</title>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title> Eric Hickstein's Portfolio - Home</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </head>
 
 <body id="page1">
-    <div class="header">
-    <div class="headwidth">
-    <div id="namehead">
-    <h1>
-        Eric Hickstein
-    </h1>
+    <!--Starting the HTML wireframe with a Materialize Parallax element for the de-facto header of the site.-->
+    <div class="parallax-container" id="parallaxContainer">
+        <div class="container">
+            <div class="row">
+                <div class="col xs12 sm12 m12 l12">
+                    <!--Creating a header <div> to control all of the header elements at once with style.css.-->
+                    <div id="headerContent">
+                        <a class="btn-floating waves-effect waves-light z-depth-3" id="profileButton" href="info.html"><img class="responsive-img" src="assets/images/Stock profile photo.jpg"></a>
+                        <h2 id="headerTitle">Eric Hickstein</h2>
+                        <h5 id="headerText">Soon to be Full-Stack Web Developer</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img id="parallaxImage" src="assets/images/Photos-Of-Navy-Blue-Wallpaper-Dark-Hd-Mobile.jpg"></div> 
     </div>
-    <ul id="headcontent">
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="index.html">About</a></li>
-    </ul>
-    </div>
-    </div>
+    <div class="container" id="mainContent">
 
-    <div class="maincontent">
-    <h2>
-        About Me
-    </h2>
-
-    <hr>
-
-
-    <div id="about" class="clearfix">
-        <img id="imgfloat" src="https://picsum.photos/200/150" alt="stock image supposed to be me">
-        <p id="txtfloat1">
-            I grew up in St. Louis Park, Minnesota. I went to elementary school at Park Spanish Immersion School, am entirely fluent in Spanish, and graduated from St. Louis Park High School in 2017.
-        </p>
-        <p id="txtfloat2">
-            After completing my senior year of high school at Normandale Community College through the PSEO program, I completed another year at Normandale, before beginning the Full-Stack Web Development Bootcamp at the University of Minnesota.
-        </p>
-        <p id="txtfloat3">
-            I am an Eagle Scout, have received the Vigil Honor in the Order of the Arrow, and have 3 Continuing Educaiton Credits in Java Programming, and will soon be a web developer.
-        </p>
-    </div>
-    </div>
-
-    <div class=footer>
-        <p>
-            Copyright Eric Hickstein &copy; <a href="https://github.com/ehickstein" class="fab fa-github"></a>  <a href="https://www.linkedin.com/in/eric-hickstein-511511170/" class="fab fa-linkedin"></a>
-        </p>
     </div>
 </body>
 
