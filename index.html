@@ -2,54 +2,105 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <title> Eric's Basic Portfolio - About</title>
+    <title>Eric Hickstein - Home</title>
 </head>
 
-<body id="page1">
-    <div class="header">
-    <div class="headwidth">
-    <div id="namehead">
-    <h1>
-        Eric Hickstein
-    </h1>
-    </div>
-    <ul id="headcontent">
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="index.html">About</a></li>
-    </ul>
-    </div>
-    </div>
-
-    <div class="maincontent">
-    <h2>
-        About Me
-    </h2>
-
-    <hr>
-
-
-    <div id="about" class="clearfix">
-        <img id="imgfloat" src="https://picsum.photos/200/150" alt="stock image supposed to be me">
-        <p id="txtfloat1">
-            I grew up in St. Louis Park, Minnesota. I went to elementary school at Park Spanish Immersion School, am entirely fluent in Spanish, and graduated from St. Louis Park High School in 2017.
-        </p>
-        <p id="txtfloat2">
-            After completing my senior year of high school at Normandale Community College through the PSEO program, I completed another year at Normandale, before beginning the Full-Stack Web Development Bootcamp at the University of Minnesota.
-        </p>
-        <p id="txtfloat3">
-            I am an Eagle Scout, have received the Vigil Honor in the Order of the Arrow, and have 3 Continuing Educaiton Credits in Java Programming, and will soon be a web developer.
-        </p>
-    </div>
+<body>
+    <div class="parallax-container center-align">
+        <div class="container" id="buttonContainer">
+            <div class="row">
+                <a href="index.html" class="waves-effect waves-light btn-floating" id="profileButton"></a>
+                <h2 class="siteHead">Eric Hickstein</h2>
+                <h4 class="siteHead2">Full-Stack Web Developer</h4>
+                <div>
+                  <a href="https://github.com/ehickstein"><img src="assets/images/iconfinder_social_media_logo_github_1221585.png" id="githubIcon"></a> <a href="https://www.linkedin.com/in/ehickstein/"><img src="assets/images/iconfinder_linkedin_834713.png" id="linkedinIcon"></a> <a href="https://twitter.com/hicksteineric"><img src="assets/images/Twitter_Social_Icon_Circle_Color.png" id="twitterIcon"></a>
+                </div>
+            </div>
+        </div>
+        <div class="parallax" id="parallax"><img id="parallax-image" src="./assets/images/Photos-Of-Navy-Blue-Wallpaper-Dark-Hd-Mobile.jpg"></div>
     </div>
 
-    <div class=footer>
-        <p>
-            Copyright Eric Hickstein &copy; <a href="https://github.com/ehickstein" class="fab fa-github"></a>  <a href="https://www.linkedin.com/in/eric-hickstein-511511170/" class="fab fa-linkedin"></a>
-        </p>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h2 id="aboutMe">About Me</h2>
+          <p id="aboutMeText">I grew up in St. Louis Park, Minnesota. I went to elementary school at Park Spanish Immersion School, am entirely fluent in Spanish, and graduated from St. Louis Park High School in 2017.
+          After completing my senior year of high school at Normandale Community College through the PSEO program, I completed another year at Normandale, before beginning the Full-Stack Web Development Bootcamp at the University of Minnesota.
+          I am an Eagle Scout, have received the Vigil Honor in the Order of the Arrow, and have 3 Continuing Educaiton Credits in Java Programming, and I have now graduated the University of Minnesota Full Stack Development Bootcamp.
+          I am currently searching for a full-time Full Stack Developer/Engineer position, please contact me below with any inquiries or offers.</p>
+        </div>
+        <br><br>
+        <div class="col s12">
+          <h2>Portfolio</h2>
+          <div class="row">
+            <div class="col s4">
+              <a href="https://coding-bootcamp-project-1.herokuapp.com/index.html">
+              <div class="card hoverable" id="gitCard">
+                <div class="card-title valign-wrapper">
+                  <h3 id="gitCardTitle">Git Outta Town</h3>
+                </div>
+              </div>
+              </a>
+              <a href="https://github.com/ehickstein/Git_outta_town"><h4>Github Link</h4></a>
+            </div>
+            <div class="col s4">
+              <a href="https://ehickstein.github.io/Gif-Tastic/">
+              <div class="card hoverable" id="gifCard">
+                <div class="card-title valign-wrapper">
+                  <h3 id="gifCardTitle">Gif Tastic</h3>
+                </div>
+              </div>
+              </a>
+              <a href="https://github.com/ehickstein/Gif-Tastic"><h4>Github Link</h4></a>
+            </div>
+            <div class="col s4">
+              <a href="https://warm-ocean-89902.herokuapp.com/articles">
+              <div class="card hoverable" id="scrapeCard">
+                <div class="card-title valign-wrapper">
+                </div>
+              </div>
+              </a>
+              <a href="https://github.com/ehickstein/Scraper"><h4>Github Link</h4></a>
+            </div>
+          </div>
+        </div>
+        <br><br>
+        <div class="col s12">
+          <h2>Contact Me</h2>
+          <div>
+            <form id="contact-form" action="https://formspree.io/eric@thehicksteins.com" method="POST">
+              <div class="form-group center-block">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control contact-input" id="inputName" placeholder="Name" name="name">
+              </div>
+              <div class="form-group center-block">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control contact-input" id="inputEmail" placeholder="Email" name="email">
+              </div>
+              <div class="form-group center-block">
+                <label for="inputMessage">Message</label>
+                <textarea id="inputMessage" class="form-control contact-input" rows="3" placeholder="Your Message" name="message"></textarea>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-default" type="submit" id="email-submit-btn" value="Send">
+                  Submit
+                </button>
+              </div>
+              <span></span>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
