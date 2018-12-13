@@ -22,7 +22,7 @@
 body{
   background-color: #f2f2f2;
   font-family: 'Work Sans', sans-serif;
-  min-height: 2000px;
+  min-height: 2100px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Crimson Text', serif;
@@ -69,4 +69,18 @@ h1, h2, h3, h4, h5, h6 {
 #scrapeCard{
   height: 400px;
   background-image: url("../images/Screen\ Shot\ 2018-12-12\ at\ 6.45.32\ PM.png");
+}
+#githubLinks{
+  text-decoration: underline;
+}
+#list{
+  float: left;
+  display: inline-block;
+}
+#list2{
+  float: left;
+  display: inline-block;
+}
+#pushDown{
+  margin-bottom: 50px;
 }
